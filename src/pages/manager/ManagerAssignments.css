@@ -1,0 +1,484 @@
+/* =========================================================
+   AGENT ASSIGNMENTS PAGE
+========================================================= */
+
+.assignment-page {
+  width: 100%;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.assignment-form-card {
+  width: 100%;
+
+  padding: 25px;
+
+  border: 1px solid #e4e8ef;
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 30px rgba(
+      23,
+      36,
+      61,
+      0.035
+    );
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.assignment-form-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 25px;
+}
+
+
+.assignment-form-icon {
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  color: #6956d4;
+
+  background: #efecff;
+}
+
+
+.assignment-form-header h3 {
+  margin: 0;
+
+  color: #26354d;
+
+  font-size: 17px;
+
+  font-weight: 760;
+}
+
+
+.assignment-form-header p {
+  margin: 5px 0 0;
+
+  color: #8a95a6;
+
+  font-size: 11px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.assignment-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 19px;
+}
+
+
+.assignment-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.assignment-field label {
+  color: #47566c;
+
+  font-size: 11px;
+
+  font-weight: 750;
+}
+
+
+/* =========================================================
+   SELECT + INPUT
+========================================================= */
+
+.assignment-field select,
+.assignment-field input {
+  width: 100%;
+
+  height: 46px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dfe4eb;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  color: #35435a;
+
+  background: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.assignment-field select:focus,
+.assignment-field input:focus {
+  border-color: #8b78e6;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      111,
+      92,
+      212,
+      0.09
+    );
+}
+
+
+.assignment-field select:disabled,
+.assignment-field input:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  background: #f7f8fa;
+}
+
+
+/* =========================================================
+   LOCATION INPUT
+========================================================= */
+
+.assignment-location-input {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.assignment-location-input svg {
+  position: absolute;
+
+  left: 13px;
+
+  color: #7d8796;
+
+  pointer-events: none;
+}
+
+
+.assignment-location-input input {
+  padding-left: 40px;
+}
+
+
+/* =========================================================
+   HELP TEXT
+========================================================= */
+
+.assignment-field-help {
+  color: #929cab;
+
+  font-size: 10px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   SELECTED AGENT
+========================================================= */
+
+.assignment-agent-preview {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 12px 13px;
+
+  border: 1px solid #e6e2fb;
+
+  border-radius: 11px;
+
+  background: #faf9ff;
+}
+
+
+.assignment-agent-avatar {
+  width: 39px;
+  height: 39px;
+
+  display: grid;
+
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8e7ae9,
+      #6653d2
+    );
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+
+.assignment-agent-details {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.assignment-agent-details strong {
+  color: #33435b;
+
+  font-size: 12px;
+}
+
+
+.assignment-agent-details span {
+  color: #8a95a6;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.assignment-submit-button {
+  width: 100%;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 2px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7d69e5,
+      #624fd0
+    );
+
+  box-shadow:
+    0 10px 25px
+    rgba(
+      101,
+      81,
+      211,
+      0.20
+    );
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.assignment-submit-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 14px 30px
+    rgba(
+      101,
+      81,
+      211,
+      0.28
+    );
+}
+
+
+.assignment-submit-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   SUCCESS / ERROR
+========================================================= */
+
+.assignment-success,
+.assignment-error {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 16px;
+
+  padding: 11px 13px;
+
+  border-radius: 9px;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+.assignment-success {
+  border: 1px solid #d5eee4;
+
+  color: #39836a;
+
+  background: #f3fbf7;
+}
+
+
+.assignment-error {
+  border: 1px solid #f0d5d5;
+
+  color: #a84d4d;
+
+  background: #fff7f7;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.assignment-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin-top: 17px;
+}
+
+
+.assignment-summary > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 17px;
+
+  border: 1px solid #e4e8ef;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+}
+
+
+.assignment-summary strong {
+  color: #6653d2;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+
+.assignment-summary span {
+  color: #7e8a9c;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .assignment-form-card {
+    padding: 18px;
+  }
+
+
+  .assignment-summary {
+    grid-template-columns: 1fr;
+  }
+
+}
